@@ -1,0 +1,121 @@
+.contact__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.map__container {
+  display: none;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  background-color: #ffe26d;
+}
+
+.form__container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.form__container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container form > label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 0.65rem;
+}
+
+.form__container form > input,
+textarea {
+  margin-bottom: 0.65rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.form__container form > input {
+  width: 70vw;
+  padding: 0.65rem;
+}
+
+.form__container form > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #62497c;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+/* Screen size 768px  */
+@media screen and (min-width: 768px) {
+  .contact__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map__container {
+    display: block;
+    width: 50vw;
+  }
+  .map__container iframe {
+    width: 50vw;
+    height: 100%;
+  }
+
+  .form__container {
+    width: 50vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .form__container form > input {
+    width: 40vw;
+  }
+}
+
+/* Screen size 1024px  */
+@media screen and (min-width: 1024px) {
+  .form__container {
+    padding: 3rem 1.5rem;
+  }
+
+  .form__container form {
+    padding: 2rem 1rem;
+  }
+
+  .form__container h1 {
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+
+  .form__container form > label {
+    font-size: 1rem;
+  }
+
+  .form__container form > input {
+    width: 15vw;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .form__container form > textarea {
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .form__container form > button {
+    margin-top: 1.5rem;
+  }
+}

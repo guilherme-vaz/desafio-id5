@@ -1,0 +1,32 @@
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+@mixin card-img {
+  background-color: #62497c;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+@mixin card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #62497c;
+  margin-bottom: 1rem;
+}
+
+@mixin card-text($width: 50%, $line-height: 1rem) {
+  text-align: center;
+  line-height: $line-height;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: $width;
+  color: #b5b5b5;
+  margin-bottom: 1rem;
+}

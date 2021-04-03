@@ -1,0 +1,126 @@
+.welcome__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding: 3rem;
+  margin-top: 2rem;
+}
+
+.welcome__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.welcome__session-1 p {
+  display: none;
+}
+
+.welcome__session-1 img {
+  display: none;
+}
+
+.welcome__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.welcome__card {
+  @include card;
+}
+
+.welcome__card img {
+  @include card-img;
+}
+
+.welcome__card h2 {
+  @include card-title;
+}
+
+.welcome__card p {
+  @include card-text;
+}
+
+/* Screen size 768px  */
+@media screen and (min-width: 768px) {
+  .welcome__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding: 3rem;
+    padding-top: 4rem;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .welcome__session-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .welcome__info {
+    max-width: 440px;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-right: 1rem;
+  }
+
+  .welcome__session-1 h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .welcome__session-1 p {
+    display: block;
+  }
+
+  .welcome__session-1 img {
+    display: initial;
+    max-width: 260px;
+  }
+
+  .welcome__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .welcome__card p {
+    @include card-text(80%);
+  }
+
+  .welcome__card p {
+    @include card-text(80%);
+  }
+
+  .welcome__card p {
+    @include card-text(80%);
+  }
+}
+
+/* Screen size 1024px  */
+@media screen and (min-width: 1024px) {
+  .welcome__card:first-child {
+    margin-right: 5rem;
+  }
+
+  .welcome__card p {
+    @include card-text(90%);
+  }
+
+  .welcome__card:last-child {
+    margin-left: 5rem;
+  }
+}
